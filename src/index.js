@@ -1,10 +1,15 @@
-import "./styles.css";
+let toggleButton = document.querySelector(".js-toggle");
+if (toggleButton) {
+  toggleButton.addEventListener("click", function () {
+    document.querySelector(".sidebar").classList.toggle("hidden");
+    toggleButton.classList.toggle("hidden");
+  });
+}
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+let toggleButton2 = document.querySelector(".js-toggle-2");
+if (toggleButton2) {
+  toggleButton2.addEventListener("click", function () {
+    document.querySelector(".sidebar").classList.toggle("hidden");
+    toggleButton.classList.toggle("hidden");
+  });
+}
