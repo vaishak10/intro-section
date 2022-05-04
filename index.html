@@ -14,6 +14,15 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@800&family=IBM+Plex+Sans:wght@400;500&family=Nunito+Sans&family=Open+Sans:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -40,7 +49,7 @@
           fill="#151515"
         />
       </svg>
-      <div class="hidden sm:block sm:ml-6">
+      <div class="hidden sm:block sm:ml-6 text-[#696969]">
         <span>Features</span>
         <span>Company</span>
         <span>Careers</span>
@@ -59,9 +68,9 @@
             <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
           </g>
         </svg>
-        <div class="hidden sidebar">
+        <ol class="hidden sidebar">
           <svg
-            class="js-toggle-2"
+            class="relative left-8 js-toggle-2"
             width="26"
             height="26"
             xmlns="http://www.w3.org/2000/svg"
@@ -71,19 +80,31 @@
               <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z" />
             </g>
           </svg>
-          <span>Features</span>
-          <span>Company</span>
-          <span>Careers</span>
-          <span>About</span>
-          <span>Login</span>
-          <span>Register</span>
-        </div>
+          <li>Features</li>
+          <li>Company</li>
+          <li>Careers</li>
+          <li>About</li>
+          <li>Login</li>
+          <li>Register</li>
+        </ol>
       </div>
     </div>
-    Company Careers About Login Register Make remote work Get your team in sync,
-    no matter your location. Streamline processes, create team rituals, and
-    watch productivity soar. Learn more
-
+    <div class="grid grid-cols-2 p-36">
+      <div>
+        <p class="qoute text-9xl text-[#141414]">
+          Make<br />
+          remote work
+        </p>
+        <p class="text-[#696969]">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="rounded-lg bg-black text-[#ffff] p-3">Learn more</button>
+      </div>
+      <div class="">
+        <img src="images/image-hero-desktop.png" />
+      </div>
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
